@@ -1,5 +1,4 @@
 import React from 'react';
-import { Volume2, Pause } from 'lucide-react';
 
 interface HeroButtonProps {
   name: string;
@@ -7,7 +6,7 @@ interface HeroButtonProps {
   text: string;
   imageUrl: string;
   onClick: () => void;
-  isPlaying?: boolean;
+  isPlaying: boolean;
 }
 
 export const HeroButton: React.FC<HeroButtonProps> = ({ name, color, text, imageUrl, onClick, isPlaying }) => {
