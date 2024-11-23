@@ -12,9 +12,11 @@ function App() {
   const [currentAudio, setCurrentAudio] = useState<string>('');
   const [isPlaying, setIsPlaying] = useState(false);
 
+  const filteredHeroeEnabled = heroes.filter(hero => hero.enabled);
+
   const filteredHeroes = selectedRole
-    ? heroes.filter(hero => hero.role === selectedRole)
-    : heroes;
+    ? filteredHeroeEnabled.filter(hero => hero.role === selectedRole).filter(hero => hero.enabled)
+    : filteredHeroeEnabled;
 
   const playSound = (audioUrl: string) => {
     if (audioRef.current) {
