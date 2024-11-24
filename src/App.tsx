@@ -11,6 +11,14 @@ interface Position {
   y: number;
 }
 function App() {
+
+  const bodyParser = require('body-parser');
+  const express = require('express');
+  const app = express();
+  app.use(bodyParser.json());
+  app.use(bodyParser.urlencoded({ extended: true }));
+
+  
   const [selectedRole, setSelectedRole] = useState<string | null>(null);
   const [selectedHero, setSelectedHero] = useState<string | null>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
