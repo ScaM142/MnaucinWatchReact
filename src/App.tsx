@@ -2,38 +2,8 @@ import React, { useState, useRef } from 'react';
 import { heroes } from './data/heroes';
 import { HeroButton } from './components/HeroButton';
 import { RoleFilter } from './components/RoleFilter';
+import { LoginModal } from './components/LoginModal';
 
-
-
-//login
-interface LoginModalProps {
-  onLogin: (password: string) => void;
-}
-
-export const LoginModal: React.FC<LoginModalProps> = ({ onLogin }) => {
-  const [password, setPassword] = useState('');
-  
-  return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-gray-800 p-8 rounded-lg shadow-xl max-w-md w-full">
-        <h2 className="text-2xl text-white mb-4">Enter Password</h2>
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className="w-full p-2 rounded bg-gray-700 text-white mb-4"
-          placeholder="Password"
-        />
-        <button
-          onClick={() => onLogin(password)}
-          className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
-        >
-          Login
-        </button>
-      </div>
-    </div>
-  );
-};
 
 interface Position {
   x: number;
@@ -100,7 +70,6 @@ function App() {
 
   // Add login handler
   const handleLogin = (hashedPassword: string) => {
-    console.log('password', hashedPassword);
 
     if (hashedPassword === import.meta.env.VITE_PASSWORD_HASH) {
       setIsAuthenticated(true);

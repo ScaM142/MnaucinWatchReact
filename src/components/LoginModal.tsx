@@ -9,21 +9,15 @@ interface LoginModalProps {
 export const LoginModal: React.FC<LoginModalProps> = ({ onLogin }) => {
   const [password, setPassword] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  
+
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.group('Login Process');
-    console.log('1. Form submitted');
-    console.log('Password length:', password.length);
-    
     setIsLoading(true);
     
     try {
-      console.log('2. Calling hashPassword');
       const hashedPassword = await hashPassword(password);
-      console.log('3. Hash generated:', hashedPassword);
       
-      console.log('4. Calling onLogin');
       onLogin(hashedPassword);
     } catch (error) {
       console.error('Login error:', error);
@@ -35,10 +29,15 @@ export const LoginModal: React.FC<LoginModalProps> = ({ onLogin }) => {
     }
   };
 
+  const handleButtonClick = async () => {
+    console.log('Button clicked directly');
+    await handleSubmit(new Event('submit') as any);
+  };
+
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
       <form 
-        onSubmit={handleSubmit} 
+        onSubmit={handleSubmit}
         className="bg-gray-800 p-8 rounded-lg shadow-xl max-w-md w-full"
       >
         <h2 className="text-2xl text-white mb-4">Skibidi</h2>
@@ -53,6 +52,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({ onLogin }) => {
         />
         <button
           type="submit"
+          onClick={handleButtonClick}
           className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600 disabled:opacity-50"
           disabled={isLoading || !password}
         >
