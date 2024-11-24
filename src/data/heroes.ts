@@ -170,6 +170,20 @@ export const heroes: Hero[] = [
     ]
   },
   {
+    id: 'hazard',
+    name: 'Hazard',
+    role: 'Tank',
+    color: 'from-gray-400 to-gray-600',
+    imageUrl: '/icons/hazard.png',
+    enabled: false,
+    voicelines: [
+      {
+        text: "Danger Zone!",
+        audio: '/sounds/hazard1.mp3'
+      }
+    ]
+  },
+  {
     id: 'illari',
     name: 'Illari',
     role: 'Support',
@@ -208,6 +222,20 @@ export const heroes: Hero[] = [
       {
         text: "Fire in the hole!",
         audio: 'sounds/junkrat1.mp3'
+      }
+    ]
+  },
+  {
+    id: 'juno',
+    name: 'Juno',
+    role: 'Support',
+    color: 'from-yellow-400 to-yellow-600',
+    imageUrl: '/icons/juno.png',
+    enabled: false,
+    voicelines: [
+      {
+        text: "Stay close!",
+        audio: '/sounds/juno1.mp3'
       }
     ]
   },
@@ -280,6 +308,20 @@ export const heroes: Hero[] = [
       {
         text: "Kikiriki!",
         audio: '/sounds/mauga2.mp3'
+      }
+    ]
+  },
+  {
+    id: 'mccree',
+    name: 'McCree',
+    role: 'Damage',
+    color: 'from-red-400 to-red-600',
+    imageUrl: '/icons/mccree.png',
+    enabled: false,
+    voicelines: [
+      {
+        text: "It's high noon!",
+        audio: '/sounds/mccree1.mp3'
       }
     ]
   },
@@ -362,6 +404,20 @@ export const heroes: Hero[] = [
       {
         text: "Justiční stráž!",
         audio: '/sounds/pharah2.mp3'
+      }
+    ]
+  },
+  {
+    id: 'ramattra',
+    name: 'Ramattra',
+    role: 'Tank',
+    color: 'from-gray-400 to-gray-600',
+    imageUrl: '/icons/rammatra.png',
+    enabled: false,
+    voicelines: [
+      {
+        text: "For our people!",
+        audio: '/sounds/ramattra1.mp3'
       }
     ]
   },
@@ -534,6 +590,20 @@ export const heroes: Hero[] = [
       {
         text: "I got you in my sights.",
         audio: '/sounds/widowmaker1.mp3'
+      }
+    ]
+  },
+  {
+    id: 'winston',
+    name: 'Winston',
+    role: 'Tank',
+    color: 'from-gray-400 to-gray-600',
+    imageUrl: '/icons/winston.png',
+    enabled: true,
+    voicelines: [
+      {
+        text: "Did someone say... peanut butter?",
+        audio: '/sounds/winston1.mp3'
       }
     ]
   },

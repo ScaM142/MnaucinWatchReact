@@ -18,7 +18,7 @@ function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [modalPosition, setModalPosition] = useState<Position | null>(null);
 
-  const filteredHeroeEnabled = heroes.filter(hero => hero.enabled);
+  const filteredHeroeEnabled = heroes.filter(hero => hero);
 
   const filteredHeroes = selectedRole
     ? filteredHeroeEnabled.filter(hero => hero.role === selectedRole).filter(hero => hero.enabled)
@@ -47,7 +47,7 @@ function App() {
 
     const button = event.currentTarget as HTMLElement;
     const rect = button.getBoundingClientRect();
-
+    console.log('click');
     // Center position calculation
     const position = {
       x: rect.left + (rect.width / 2), // Center horizontally
@@ -112,7 +112,7 @@ function App() {
               {/* <RoleFilter selectedRole={selectedRole} onRoleSelect={setSelectedRole} /> */}
               {/* Role sections in columns */}
               <div className="flex flex-col lg:flex-row gap-16">
-              {/* Tank Section */}
+                {/* Tank Section */}
                 <div className="flex-1">
                   <div className="flex items-center justify-center gap-3 mb-6"> {/* Added justify-center */}
                     <Shield className="w-16 h-16 text-gray-300" /> {/* Increased size */}
@@ -128,8 +128,13 @@ function App() {
                         imageUrl={hero.imageUrl}
                         onClick={(e) => handleHeroClick(hero.id, e)}
                         isPlaying={false}
-                        className="hero-button w-full p-6" // Increased padding
-                      />
+                      >
+                        {!hero.enabled && (
+                          <div className="absolute inset-0 bg-gray-900 bg-opacity-75 rounded-lg flex items-center justify-center">
+                            <span className="text-gray-400">Locked</span>
+                          </div>
+                        )}
+                      </HeroButton>
                     ))}
                   </div>
                 </div>
@@ -150,8 +155,14 @@ function App() {
                         imageUrl={hero.imageUrl}
                         onClick={(e) => handleHeroClick(hero.id, e)}
                         isPlaying={false}
-                        className="hero-button w-full p-6" // Increased padding
-                      />
+                        enabled={hero.enabled}
+                      >
+                        {!hero.enabled && (
+                          <div className="absolute inset-0 bg-gray-900 bg-opacity-75 rounded-lg flex items-center justify-center">
+                            <span className="text-gray-400">Locked</span>
+                          </div>
+                        )}
+                      </HeroButton>
                     ))}
                   </div>
                 </div>
@@ -172,8 +183,14 @@ function App() {
                         imageUrl={hero.imageUrl}
                         onClick={(e) => handleHeroClick(hero.id, e)}
                         isPlaying={false}
-                        className="hero-button w-full p-6" // Increased padding
-                      />
+                        enabled={hero.enabled}
+                      >
+                        {!hero.enabled && (
+                          <div className="absolute inset-0 bg-gray-900 bg-opacity-75 rounded-lg flex items-center justify-center">
+                            <span className="text-gray-400">Locked</span>
+                          </div>
+                        )}
+                      </HeroButton>
                     ))}
                   </div>
                 </div>
