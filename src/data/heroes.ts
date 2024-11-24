@@ -17,7 +17,7 @@ export const heroes: Hero[] = [
     id: 'ana',
     name: 'Ana',
     role: 'Support',
-    color: 'from-blue-400 to-blue-600',
+    color: 'from-yellow-400 to-yellow-600',
     imageUrl: '/icons/ana.png',
     enabled: true,
     voicelines: [
@@ -49,7 +49,7 @@ export const heroes: Hero[] = [
     id: 'baptiste',
     name: 'Baptiste',
     role: 'Support',
-    color: 'from-blue-300 to-blue-500',
+    color: 'from-yellow-400 to-yellow-600',
     imageUrl: '/icons/baptiste.png',
     enabled: true,
     voicelines: [
@@ -63,7 +63,7 @@ export const heroes: Hero[] = [
     id: 'bastion',
     name: 'Bastion',
     role: 'Damage',
-    color: 'from-green-400 to-green-600',
+    color: 'from-red-400 to-red-600',
     imageUrl: '/icons/bastion.png',
     enabled: false,
     voicelines: [
@@ -77,7 +77,7 @@ export const heroes: Hero[] = [
     id: 'brigitte',
     name: 'Brigitte',
     role: 'Support',
-    color: 'from-orange-300 to-orange-500',
+    color: 'from-yellow-400 to-yellow-600',
     imageUrl: '/icons/brig.png',
     enabled: false,
     voicelines: [
@@ -91,7 +91,7 @@ export const heroes: Hero[] = [
     id: 'doomfist',
     name: 'Doomfist',
     role: 'Tank',
-    color: 'from-red-500 to-red-700',
+    color: 'from-gray-400 to-gray-600',
     imageUrl: '/icons/doomfist.png',
     enabled: true,
     voicelines: [
@@ -105,7 +105,7 @@ export const heroes: Hero[] = [
     id: 'dva',
     name: 'D.Va',
     role: 'Tank',
-    color: 'from-pink-400 to-pink-600',
+    color: 'from-gray-400 to-gray-600',
     imageUrl: '/icons/dva.png',
     enabled: true,
     voicelines: [
@@ -123,7 +123,7 @@ export const heroes: Hero[] = [
     id: 'echo',
     name: 'Echo',
     role: 'Damage',
-    color: 'from-blue-200 to-blue-400',
+    color: 'from-red-400 to-red-600',
     imageUrl: '/icons/echo.png',
     enabled: false,
     voicelines: [
@@ -137,7 +137,7 @@ export const heroes: Hero[] = [
     id: 'genji',
     name: 'Genji',
     role: 'Damage',
-    color: 'from-green-500 to-green-700',
+    color: 'from-red-400 to-red-600',
     imageUrl: '/icons/genji.png',
     enabled: true,
     voicelines: [
@@ -159,7 +159,7 @@ export const heroes: Hero[] = [
     id: 'hanzo',
     name: 'Hanzo',
     role: 'Damage',
-    color: 'from-yellow-500 to-yellow-700',
+    color: 'from-red-400 to-red-600',
     imageUrl: '/icons/hanzo.png',
     enabled: false,
     voicelines: [
@@ -187,7 +187,7 @@ export const heroes: Hero[] = [
     id: 'junker-queen',
     name: 'Junker Queen',
     role: 'Tank',
-    color: 'from-purple-400 to-purple-600',
+    color: 'from-gray-400 to-gray-600',
     imageUrl: '/icons/junkerqueen.png',
     enabled: false,
     voicelines: [
@@ -201,7 +201,7 @@ export const heroes: Hero[] = [
     id: 'junkrat',
     name: 'Junkrat',
     role: 'Damage',
-    color: 'from-yellow-400 to-yellow-600',
+    color: 'from-red-400 to-red-600',
     imageUrl: '/icons/junkrat.png',
     enabled: false,
     voicelines: [
@@ -215,7 +215,7 @@ export const heroes: Hero[] = [
     id: 'kiriko',
     name: 'Kiriko',
     role: 'Support',
-    color: 'from-green-300 to-green-500',
+    color: 'from-yellow-400 to-yellow-600',
     imageUrl: '/icons/kiriko.png',
     enabled: true,
     voicelines: [
@@ -237,13 +237,13 @@ export const heroes: Hero[] = [
     id: 'lifeweaver',
     name: 'Lifeweaver',
     role: 'Support',
-    color: 'from-blue-300 to-blue-500',
+    color: 'from-yellow-400 to-yellow-600',
     imageUrl: '/icons/lifeweaver.png',
     enabled: true,
     voicelines: [
       {
         text: "Fangšuit!",
-        audio: '/sounds/lifeweaver1.mp3'
+        audio: '/sounds/liveweaver1.mp3'
       }
     ]
   },
@@ -251,7 +251,7 @@ export const heroes: Hero[] = [
     id: 'lucio',
     name: 'Lúcio',
     role: 'Support',
-    color: 'from-green-400 to-green-600',
+    color: 'from-yellow-400 to-yellow-600',
     imageUrl: '/icons/lucio.png',
     enabled: true,
     voicelines: [
@@ -287,7 +287,7 @@ export const heroes: Hero[] = [
     id: 'mei',
     name: 'Mei',
     role: 'Damage',
-    color: 'from-blue-300 to-blue-500',
+    color: 'from-red-400 to-red-600',
     imageUrl: '/icons/mei.png',
     enabled: true,
     voicelines: [
@@ -301,7 +301,7 @@ export const heroes: Hero[] = [
     id: 'mercy',
     name: 'Mercy',
     role: 'Support',
-    color: 'from-yellow-200 to-yellow-400',
+    color: 'from-yellow-400 to-yellow-600',
     imageUrl: '/icons/mercy.png',
     enabled: true,
     voicelines: [
@@ -323,7 +323,7 @@ export const heroes: Hero[] = [
     id: 'moira',
     name: 'Moira',
     role: 'Support',
-    color: 'from-blue-400 to-blue-600',
+    color: 'from-yellow-400 to-yellow-600',
     imageUrl: '/icons/moira.png',
     enabled: false,
     voicelines: [
@@ -397,7 +397,7 @@ export const heroes: Hero[] = [
     id: 'roadhog',
     name: 'Roadhog',
     role: 'Tank',
-    color: 'from-gray-500 to-gray-700',
+    color: 'from-gray-400 to-gray-600',
     imageUrl: '/icons/roadhog.png',
     enabled: false,
     voicelines: [
@@ -453,7 +453,7 @@ export const heroes: Hero[] = [
     id: 'sombra',
     name: 'Sombra',
     role: 'Damage',
-    color: 'from-red-300 to-red-500',
+    color: 'from-red-400 to-red-600',
     imageUrl: '/icons/sombra.png',
     enabled: true,
     voicelines: [
@@ -495,7 +495,7 @@ export const heroes: Hero[] = [
     id: 'tracer',
     name: 'Tracer',
     role: 'Damage',
-    color: 'from-orange-400 to-yellow-400',
+    color: 'from-red-400 to-red-600',
     imageUrl: '/icons/tracer.png',
     enabled: false,
     voicelines: [
@@ -509,7 +509,7 @@ export const heroes: Hero[] = [
     id: 'venture',
     name: 'Venture',
     role: 'Damage',
-    color: 'from-purple-400 to-purple-600',
+    color: 'from-red-400 to-red-600',
     imageUrl: '/icons/venture.png',
     enabled: true,
     voicelines: [
@@ -527,7 +527,7 @@ export const heroes: Hero[] = [
     id: 'widowmaker',
     name: 'Widowmaker',
     role: 'Damage',
-    color: 'from-purple-500 to-purple-700',
+    color: 'from-red-400 to-red-600',
     imageUrl: '/icons/widowmaker.png',
     enabled: true,
     voicelines: [
@@ -541,7 +541,7 @@ export const heroes: Hero[] = [
     id: 'wrecking-ball',
     name: 'Wrecking Ball',
     role: 'Tank',
-    color: 'from-yellow-500 to-yellow-700',
+    color: 'from-gray-400 to-gray-600',
     imageUrl: '/icons/wreckingball.png',
     enabled: true,
     voicelines: [
@@ -555,7 +555,7 @@ export const heroes: Hero[] = [
     id: 'zarya',
     name: 'Zarya',
     role: 'Tank',
-    color: 'from-pink-500 to-pink-700',
+    color: 'from-gray-400 to-gray-600',
     imageUrl: '/icons/zarya.png',
     enabled: true,
     voicelines: [
@@ -569,7 +569,7 @@ export const heroes: Hero[] = [
     id: 'zenyatta',
     name: 'Zenyatta',
     role: 'Support',
-    color: 'from-blue-300 to-blue-500',
+    color: 'from-yellow-400 to-yellow-600',
     imageUrl: '/icons/zenyatta.png',
     enabled: true,
     voicelines: [
