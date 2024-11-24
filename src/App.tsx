@@ -42,7 +42,7 @@ function App() {
     }
   };
 
-  const handleHeroClick = (heroId: string, event: React.MouseEvent) => {
+  const handleHeroClick = (heroId: string, enabled: boolean, event: React.MouseEvent) => {
     event.stopPropagation();
 
     const button = event.currentTarget as HTMLElement;
@@ -56,8 +56,10 @@ function App() {
 
     console.log('Modal position:', position); // Debug log
 
-    setModalPosition(position);
-    setSelectedHero(heroId);
+    if (enabled) {
+      setModalPosition(position);
+      setSelectedHero(heroId);
+    }
   };
 
   const closeModal = () => {
@@ -126,7 +128,7 @@ function App() {
                         color={hero.color}
                         text={hero.name}
                         imageUrl={hero.imageUrl}
-                        onClick={(e) => handleHeroClick(hero.id, e)}
+                        onClick={(e) => handleHeroClick(hero.id, hero.enabled, e)}
                         isPlaying={false}
                       >
                         {!hero.enabled && (
@@ -153,7 +155,7 @@ function App() {
                         color={hero.color}
                         text={hero.name}
                         imageUrl={hero.imageUrl}
-                        onClick={(e) => handleHeroClick(hero.id, e)}
+                        onClick={(e) => handleHeroClick(hero.id, hero.enabled, e)}
                         isPlaying={false}
                         enabled={hero.enabled}
                       >
@@ -181,7 +183,7 @@ function App() {
                         color={hero.color}
                         text={hero.name}
                         imageUrl={hero.imageUrl}
-                        onClick={(e) => handleHeroClick(hero.id, e)}
+                        onClick={(e) => handleHeroClick(hero.id, hero.enabled, e)}
                         isPlaying={false}
                         enabled={hero.enabled}
                       >
