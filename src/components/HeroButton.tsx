@@ -5,8 +5,9 @@ interface HeroButtonProps {
   color: string;
   text: string;
   imageUrl: string;
-  onClick: () => void;
+  onClick: (e: React.MouseEvent) => void;
   isPlaying: boolean;
+  className?: string;
 }
 
 export const HeroButton: React.FC<HeroButtonProps> = ({ name, color, text, imageUrl, onClick, isPlaying }) => {
