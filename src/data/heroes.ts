@@ -599,7 +599,7 @@ export const heroes: Hero[] = [
     role: 'Tank',
     color: 'from-gray-400 to-gray-600',
     imageUrl: '/icons/winston.png',
-    enabled: true,
+    enabled: false,
     voicelines: [
       {
         text: "Did someone say... peanut butter?",
