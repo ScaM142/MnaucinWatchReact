@@ -99,13 +99,14 @@ function App() {
   });
 
   // Add login handler
-  const handleLogin = (password: string) => {
-    // Replace with your desired password
-    if (password === 'kokot123') {
+  const handleLogin = (hashedPassword: string) => {
+    console.log('password', hashedPassword);
+
+    if (hashedPassword === import.meta.env.VITE_PASSWORD_HASH) {
       setIsAuthenticated(true);
       localStorage.setItem('isAuthenticated', 'true');
     } else {
-      alert('No rizz');
+      alert('No rizz!!');
     }
   };
   
