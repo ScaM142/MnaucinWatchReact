@@ -40,7 +40,7 @@ export const LoginModal: React.FC<LoginModalProps> = ({ onLogin }) => {
         onSubmit={handleSubmit}
         className="bg-gray-800 p-8 rounded-lg shadow-xl max-w-md w-full"
       >
-        <h2 className="text-2xl text-white mb-4">Skibidi</h2>
+        <h2 className="text-2xl text-white mb-4">Login</h2>
         <input
           type="password"
           value={password}
