@@ -3,6 +3,38 @@ import { heroes } from './data/heroes';
 import { HeroButton } from './components/HeroButton';
 import { RoleFilter } from './components/RoleFilter';
 
+
+
+//login
+interface LoginModalProps {
+  onLogin: (password: string) => void;
+}
+
+export const LoginModal: React.FC<LoginModalProps> = ({ onLogin }) => {
+  const [password, setPassword] = useState('');
+  
+  return (
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+      <div className="bg-gray-800 p-8 rounded-lg shadow-xl max-w-md w-full">
+        <h2 className="text-2xl text-white mb-4">Enter Password</h2>
+        <input
+          type="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          className="w-full p-2 rounded bg-gray-700 text-white mb-4"
+          placeholder="Password"
+        />
+        <button
+          onClick={() => onLogin(password)}
+          className="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
+        >
+          Login
+        </button>
+      </div>
+    </div>
+  );
+};
+
 interface Position {
   x: number;
   y: number;
@@ -62,8 +94,26 @@ function App() {
     setModalPosition(null);
   };
 
+  const [isAuthenticated, setIsAuthenticated] = useState(() => {
+    return localStorage.getItem('isAuthenticated') === 'true';
+  });
+
+  // Add login handler
+  const handleLogin = (password: string) => {
+    // Replace with your desired password
+    if (password === 'kokot123') {
+      setIsAuthenticated(true);
+      localStorage.setItem('isAuthenticated', 'true');
+    } else {
+      alert('No rizz');
+    }
+  };
+  
   return (
     <div className="min-h-screen relative">
+     {!isAuthenticated ? (
+        <LoginModal onLogin={handleLogin} />
+      ) : (
 
       <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 py-12 px-4" onClick={(e) => {
         if ((e.target as HTMLElement).closest('.hero-button, .voicelines-modal') === null) {
@@ -138,6 +188,7 @@ function App() {
         </div>
         <audio ref={audioRef} />
       </div>
+      )}
     </div>
   );
 }
