@@ -427,7 +427,7 @@ export const heroes: Hero[] = [
     role: 'Damage',
     color: 'from-red-400 to-red-600',
     imageUrl: './icons/reaper.png',
-    enabled: false,
+    enabled: true,
     voicelines: [
       {
         text: "Die die die!",

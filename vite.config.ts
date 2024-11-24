@@ -16,7 +16,7 @@ export default defineConfig({
       },
       output: {
         assetFileNames: (assetInfo) => {
-          const info = (assetInfo.name ?? '').split('.');
+          const info = (assetInfo.name || '').split('.');
           const ext = info[info.length - 1];
           if (assetInfo.name && /\.(css)$/i.test(assetInfo.name)) {
             return `css/[name]-[hash][extname]`;
