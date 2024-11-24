@@ -106,7 +106,7 @@ function App() {
             <div className="max-w-[90rem] mx-auto"> {/* Increased max width */}
               <div className="text-center mb-12">
                 <div className="flex items-center justify-center gap-3 mb-4">
-                  <h1 className="text-4xl font-bold text-white">MňaučinWatch</h1>
+                  <h1 className="text-6xl font-bold text-orange-500 ">MňaučinWatch</h1>
                 </div>
               </div>
               {/* <RoleFilter selectedRole={selectedRole} onRoleSelect={setSelectedRole} /> */}
@@ -116,7 +116,7 @@ function App() {
                 <div className="flex-1">
                   <div className="flex items-center justify-center gap-3 mb-6"> {/* Added justify-center */}
                     <Shield className="w-16 h-16 text-gray-300" /> {/* Increased size */}
-                    <h2 className="text-3xl font-bold text-white">Tanks</h2>
+                    <h2 className="text-3xl font-bold text-white">Tank</h2>
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"> {/* Added xl:grid-cols-4 */}
                     {filteredHeroes.filter(hero => hero.role === 'Tank').map(hero => (
