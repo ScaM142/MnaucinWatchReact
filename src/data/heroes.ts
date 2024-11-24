@@ -18,16 +18,16 @@ export const heroes: Hero[] = [
     name: 'Ana',
     role: 'Support',
     color: 'from-yellow-400 to-yellow-600',
-    imageUrl: '/icons/ana.png',
+    imageUrl: './icons/ana.png',
     enabled: true,
     voicelines: [
       {
         text: "Vidik.",
-        audio: '/sounds/ana1.mp3'
+        audio: './sounds/ana1.mp3'
       },
       {
         text: "Vidik!",
-        audio: '/sounds/ana2.mp3'
+        audio: './sounds/ana2.mp3'
       }
     ]
   },
@@ -36,12 +36,12 @@ export const heroes: Hero[] = [
     name: 'Ashe',
     role: 'Damage',
     color: 'from-red-400 to-red-600',
-    imageUrl: '/icons/ashe.png',
+    imageUrl: './icons/ashe.png',
     enabled: true,
     voicelines: [
       {
         text: "Bob!",
-        audio: '/sounds/ashe1.mp3'
+        audio: './sounds/ashe1.mp3'
       }
     ]
   },
@@ -50,12 +50,12 @@ export const heroes: Hero[] = [
     name: 'Baptiste',
     role: 'Support',
     color: 'from-yellow-400 to-yellow-600',
-    imageUrl: '/icons/baptiste.png',
+    imageUrl: './icons/baptiste.png',
     enabled: true,
     voicelines: [
       {
         text: "Vydrbanec ujo!",
-        audio: '/sounds/baptiste1.mp3'
+        audio: './sounds/baptiste1.mp3'
       }
     ]
   },
@@ -64,12 +64,12 @@ export const heroes: Hero[] = [
     name: 'Bastion',
     role: 'Damage',
     color: 'from-red-400 to-red-600',
-    imageUrl: '/icons/bastion.png',
+    imageUrl: './icons/bastion.png',
     enabled: false,
     voicelines: [
       {
         text: "*Happy beeping*",
-        audio: '/sounds/bastion1.mp3'
+        audio: './sounds/bastion1.mp3'
       }
     ]
   },
@@ -78,12 +78,12 @@ export const heroes: Hero[] = [
     name: 'Brigitte',
     role: 'Support',
     color: 'from-yellow-400 to-yellow-600',
-    imageUrl: '/icons/brig.png',
+    imageUrl: './icons/brig.png',
     enabled: false,
     voicelines: [
       {
         text: "Rally to me!",
-        audio: '/sounds/brig1.mp3'
+        audio: './sounds/brig1.mp3'
       }
     ]
   },
@@ -92,12 +92,12 @@ export const heroes: Hero[] = [
     name: 'Doomfist',
     role: 'Tank',
     color: 'from-gray-400 to-gray-600',
-    imageUrl: '/icons/doomfist.png',
+    imageUrl: './icons/doomfist.png',
     enabled: true,
     voicelines: [
       {
         text: "Meteorit",
-        audio: '/sounds/doomfist1.mp3'
+        audio: './sounds/doomfist1.mp3'
       }
     ]
   },
@@ -106,16 +106,16 @@ export const heroes: Hero[] = [
     name: 'D.Va',
     role: 'Tank',
     color: 'from-gray-400 to-gray-600',
-    imageUrl: '/icons/dva.png',
+    imageUrl: './icons/dva.png',
     enabled: true,
     voicelines: [
       {
         text: "Is this EZ mode? ",
-        audio: '/sounds/dva1.mp3'
+        audio: './sounds/dva1.mp3'
       },
       {
         text: "Nerf this!",
-        audio: '/sounds/dva2.mp3'
+        audio: './sounds/dva2.mp3'
       }
     ]
   },
@@ -124,12 +124,12 @@ export const heroes: Hero[] = [
     name: 'Echo',
     role: 'Damage',
     color: 'from-red-400 to-red-600',
-    imageUrl: '/icons/echo.png',
+    imageUrl: './icons/echo.png',
     enabled: false,
     voicelines: [
       {
         text: "Adapting to new threats.",
-        audio: '/sounds/echo1.mp3'
+        audio: './sounds/echo1.mp3'
       }
     ]
   },
@@ -138,20 +138,20 @@ export const heroes: Hero[] = [
     name: 'Genji',
     role: 'Damage',
     color: 'from-red-400 to-red-600',
-    imageUrl: '/icons/genji.png',
+    imageUrl: './icons/genji.png',
     enabled: true,
     voicelines: [
       {
         text: "Judžin",
-        audio: '/sounds/genji1.mp3'
+        audio: './sounds/genji1.mp3'
       },
       {
         text: "Judžin Judžin ",
-        audio: '/sounds/genji2.mp3'
+        audio: './sounds/genji2.mp3'
       },
       {
         text: "Judžin no ken wo kurae!",
-        audio: '/sounds/genji3.mp3'
+        audio: './sounds/genji3.mp3'
       }
     ]
   },
@@ -160,12 +160,12 @@ export const heroes: Hero[] = [
     name: 'Hanzo',
     role: 'Damage',
     color: 'from-red-400 to-red-600',
-    imageUrl: '/icons/hanzo.png',
+    imageUrl: './icons/hanzo.png',
     enabled: false,
     voicelines: [
       {
         text: "Ryuga waga teki wo kurau!",
-        audio: '/sounds/hanzo1.mp3'
+        audio: './sounds/hanzo1.mp3'
       }
     ]
   },
@@ -174,12 +174,12 @@ export const heroes: Hero[] = [
     name: 'Hazard',
     role: 'Tank',
     color: 'from-gray-400 to-gray-600',
-    imageUrl: '/icons/hazard.png',
+    imageUrl: './icons/hazard.png',
     enabled: false,
     voicelines: [
       {
         text: "Danger Zone!",
-        audio: '/sounds/hazard1.mp3'
+        audio: './sounds/hazard1.mp3'
       }
     ]
   },
@@ -188,12 +188,12 @@ export const heroes: Hero[] = [
     name: 'Illari',
     role: 'Support',
     color: 'from-yellow-400 to-yellow-600',
-    imageUrl: '/icons/ilari.png',
+    imageUrl: './icons/ilari.png',
     enabled: true,
     voicelines: [
       {
         text: "Želary",
-        audio: '/sounds/ilari1.mp3'
+        audio: './sounds/ilari1.mp3'
       }
     ]
   },
@@ -202,12 +202,12 @@ export const heroes: Hero[] = [
     name: 'Junker Queen',
     role: 'Tank',
     color: 'from-gray-400 to-gray-600',
-    imageUrl: '/icons/junkerqueen.png',
+    imageUrl: './icons/junkerqueen.png',
     enabled: false,
     voicelines: [
       {
         text: "Bow to your Queen!",
-        audio: '/sounds/junkerqueen1.mp3'
+        audio: './sounds/junkerqueen1.mp3'
       }
     ]
   },
@@ -216,7 +216,7 @@ export const heroes: Hero[] = [
     name: 'Junkrat',
     role: 'Damage',
     color: 'from-red-400 to-red-600',
-    imageUrl: '/icons/junkrat.png',
+    imageUrl: './icons/junkrat.png',
     enabled: false,
     voicelines: [
       {
@@ -230,12 +230,12 @@ export const heroes: Hero[] = [
     name: 'Juno',
     role: 'Support',
     color: 'from-yellow-400 to-yellow-600',
-    imageUrl: '/icons/juno.png',
+    imageUrl: './icons/juno.png',
     enabled: false,
     voicelines: [
       {
         text: "Stay close!",
-        audio: '/sounds/juno1.mp3'
+        audio: './sounds/juno1.mp3'
       }
     ]
   },
@@ -244,20 +244,20 @@ export const heroes: Hero[] = [
     name: 'Kiriko',
     role: 'Support',
     color: 'from-yellow-400 to-yellow-600',
-    imageUrl: '/icons/kiriko.png',
+    imageUrl: './icons/kiriko.png',
     enabled: true,
     voicelines: [
       {
         text: "Karate!",
-        audio: '/sounds/kiriko1.mp3'
+        audio: './sounds/kiriko1.mp3'
       },
       {
         text: "Karate",
-        audio: '/sounds/kiriko2.mp3'
+        audio: './sounds/kiriko2.mp3'
       },
       {
         text: "Katsune",
-        audio: '/sounds/kiriko3.mp3'
+        audio: './sounds/kiriko3.mp3'
       }
     ]
   },
@@ -266,12 +266,12 @@ export const heroes: Hero[] = [
     name: 'Lifeweaver',
     role: 'Support',
     color: 'from-yellow-400 to-yellow-600',
-    imageUrl: '/icons/lifeweaver.png',
+    imageUrl: './icons/lifeweaver.png',
     enabled: true,
     voicelines: [
       {
         text: "Fangšuit!",
-        audio: '/sounds/liveweaver1.mp3'
+        audio: './sounds/liveweaver1.mp3'
       }
     ]
   },
@@ -280,16 +280,16 @@ export const heroes: Hero[] = [
     name: 'Lúcio',
     role: 'Support',
     color: 'from-yellow-400 to-yellow-600',
-    imageUrl: '/icons/lucio.png',
+    imageUrl: './icons/lucio.png',
     enabled: true,
     voicelines: [
       {
         text: "Oh, let's break it down!",
-        audio: '/sounds/lucio1.mp3'
+        audio: './sounds/lucio1.mp3'
       },
       {
         text: "Drop the beat!",
-        audio: '/sounds/lucio2.mp3'
+        audio: './sounds/lucio2.mp3'
       }
     ]
   },
@@ -298,16 +298,16 @@ export const heroes: Hero[] = [
     name: 'Mauga',
     role: 'Tank',
     color: 'from-gray-400 to-gray-600',
-    imageUrl: '/icons/mauga.png',
+    imageUrl: './icons/mauga.png',
     enabled: true,
     voicelines: [
       {
         text: "Kiki!",
-        audio: '/sounds/mauga1.mp3'
+        audio: './sounds/mauga1.mp3'
       },
       {
         text: "Kikiriki!",
-        audio: '/sounds/mauga2.mp3'
+        audio: './sounds/mauga2.mp3'
       }
     ]
   },
@@ -316,12 +316,12 @@ export const heroes: Hero[] = [
     name: 'McCree',
     role: 'Damage',
     color: 'from-red-400 to-red-600',
-    imageUrl: '/icons/mccree.png',
+    imageUrl: './icons/mccree.png',
     enabled: false,
     voicelines: [
       {
         text: "It's high noon!",
-        audio: '/sounds/mccree1.mp3'
+        audio: './sounds/mccree1.mp3'
       }
     ]
   },
@@ -330,12 +330,12 @@ export const heroes: Hero[] = [
     name: 'Mei',
     role: 'Damage',
     color: 'from-red-400 to-red-600',
-    imageUrl: '/icons/mei.png',
+    imageUrl: './icons/mei.png',
     enabled: true,
     voicelines: [
       {
         text: "Tonzo bulshitto!",
-        audio: '/sounds/mei1.mp3'
+        audio: './sounds/mei1.mp3'
       }
     ]
   },
@@ -344,20 +344,20 @@ export const heroes: Hero[] = [
     name: 'Mercy',
     role: 'Support',
     color: 'from-yellow-400 to-yellow-600',
-    imageUrl: '/icons/mercy.png',
+    imageUrl: './icons/mercy.png',
     enabled: true,
     voicelines: [
       {
         text: "Heroes never die!",
-        audio: '/sounds/mercy1.mp3'
+        audio: './sounds/mercy1.mp3'
       },
       {
         text: "Heroes never die!",
-        audio: '/sounds/mercy2.mp3'
+        audio: './sounds/mercy2.mp3'
       },
       {
         text: "Heroes never die!",
-        audio: '/sounds/mercy3.mp3'
+        audio: './sounds/mercy3.mp3'
       }
     ]
   },
@@ -366,12 +366,12 @@ export const heroes: Hero[] = [
     name: 'Moira',
     role: 'Support',
     color: 'from-yellow-400 to-yellow-600',
-    imageUrl: '/icons/moira.png',
+    imageUrl: './icons/moira.png',
     enabled: false,
     voicelines: [
       {
         text: "Brilliant!",
-        audio: '/sounds/moira1.mp3'
+        audio: './sounds/moira1.mp3'
       }
     ]
   },
@@ -380,12 +380,12 @@ export const heroes: Hero[] = [
     name: 'Orisa',
     role: 'Tank',
     color: 'from-gray-400 to-gray-600',
-    imageUrl: '/icons/orisa.png',
+    imageUrl: './icons/orisa.png',
     enabled: true,
     voicelines: [
       {
         text: "Baail moore!",
-        audio: '/sounds/orisa1.mp3'
+        audio: './sounds/orisa1.mp3'
       }
     ]
   },
@@ -394,16 +394,16 @@ export const heroes: Hero[] = [
     name: 'Pharah',
     role: 'Damage',
     color: 'from-red-400 to-red-600',
-    imageUrl: '/icons/pharah.png',
+    imageUrl: './icons/pharah.png',
     enabled: true,
     voicelines: [
       {
         text: "Justice rains from above!",
-        audio: '/sounds/pharah1.mp3'
+        audio: './sounds/pharah1.mp3'
       },
       {
         text: "Justiční stráž!",
-        audio: '/sounds/pharah2.mp3'
+        audio: './sounds/pharah2.mp3'
       }
     ]
   },
@@ -412,12 +412,12 @@ export const heroes: Hero[] = [
     name: 'Ramattra',
     role: 'Tank',
     color: 'from-gray-400 to-gray-600',
-    imageUrl: '/icons/rammatra.png',
+    imageUrl: './icons/rammatra.png',
     enabled: false,
     voicelines: [
       {
         text: "For our people!",
-        audio: '/sounds/ramattra1.mp3'
+        audio: './sounds/ramattra1.mp3'
       }
     ]
   },
@@ -426,12 +426,12 @@ export const heroes: Hero[] = [
     name: 'Reaper',
     role: 'Damage',
     color: 'from-red-400 to-red-600',
-    imageUrl: '/icons/reaper.png',
+    imageUrl: './icons/reaper.png',
     enabled: false,
     voicelines: [
       {
         text: "Die die die!",
-        audio: '/sounds/reaper1.mp3'
+        audio: './sounds/reaper1.mp3'
       }
     ]
   },
@@ -440,12 +440,12 @@ export const heroes: Hero[] = [
     name: 'Reinhardt',
     role: 'Tank',
     color: 'from-gray-400 to-gray-600',
-    imageUrl: '/icons/reinhardt.png',
+    imageUrl: './icons/reinhardt.png',
     enabled: true,
     voicelines: [
       {
         text: "Hammer down!",
-        audio: '/sounds/reinhardt1.mp3'
+        audio: './sounds/reinhardt1.mp3'
       },
     ]   
   },
@@ -454,12 +454,12 @@ export const heroes: Hero[] = [
     name: 'Roadhog',
     role: 'Tank',
     color: 'from-gray-400 to-gray-600',
-    imageUrl: '/icons/roadhog.png',
+    imageUrl: './icons/roadhog.png',
     enabled: false,
     voicelines: [
       {
         text: "I'm a one man apocalypse.",
-        audio: '/sounds/roadhog1.mp3'
+        audio: './sounds/roadhog1.mp3'
       }
     ]
   },
@@ -468,12 +468,12 @@ export const heroes: Hero[] = [
     name: 'Sigma',
     role: 'Tank',
     color: 'from-gray-400 to-gray-600',
-    imageUrl: '/icons/sigma.png',
+    imageUrl: './icons/sigma.png',
     enabled: true,
     voicelines: [
       {
         text: "What is that melody?",
-        audio: '/sounds/sigma1.mp3'
+        audio: './sounds/sigma1.mp3'
       }
     ]
   },
@@ -482,12 +482,12 @@ export const heroes: Hero[] = [
     name: 'Sojourn',
     role: 'Damage',
     color: 'from-red-400 to-red-600',
-    imageUrl: '/icons/soujourn.png',
+    imageUrl: './icons/soujourn.png',
     enabled: true,
     voicelines: [
       {
         text: "This ends now!",
-        audio: '/sounds/soujourn1.mp3'
+        audio: './sounds/soujourn1.mp3'
       }
     ]
   },
@@ -496,12 +496,12 @@ export const heroes: Hero[] = [
     name: 'Soldier: 76',
     role: 'Damage',
     color: 'from-red-400 to-red-600',
-    imageUrl: '/icons/soldier.png',
+    imageUrl: './icons/soldier.png',
     enabled: true,
     voicelines: [
       {
         text: "I÷m man on a mission!",
-        audio: '/sounds/soldier1.mp3'
+        audio: './sounds/soldier1.mp3'
       }
     ]
   },
@@ -510,12 +510,12 @@ export const heroes: Hero[] = [
     name: 'Sombra',
     role: 'Damage',
     color: 'from-red-400 to-red-600',
-    imageUrl: '/icons/sombra.png',
+    imageUrl: './icons/sombra.png',
     enabled: true,
     voicelines: [
       {
         text: "Skibidi sombra",
-        audio: '/sounds/sombra1.mp3'
+        audio: './sounds/sombra1.mp3'
       }
     ]
   },
@@ -524,12 +524,12 @@ export const heroes: Hero[] = [
     name: 'Symmetra',
     role: 'Damage',
     color: 'from-red-400 to-red-600',
-    imageUrl: '/icons/symmetra.png',
+    imageUrl: './icons/symmetra.png',
     enabled: false,
     voicelines: [
       {
         text: "Perfect harmony.",
-        audio: '/sounds/symmetra1.mp3'
+        audio: './sounds/symmetra1.mp3'
       }
     ]
   },
@@ -538,12 +538,12 @@ export const heroes: Hero[] = [
     name: 'Torbjörn',
     role: 'Damage',
     color: 'from-red-400 to-red-600',
-    imageUrl: '/icons/torbjorn.png',
+    imageUrl: './icons/torbjorn.png',
     enabled: true,
     voicelines: [
       {
         text: "My turret!",
-        audio: '/sounds/torbjorn1.mp3'
+        audio: './sounds/torbjorn1.mp3'
       }
     ]
   },
@@ -552,12 +552,12 @@ export const heroes: Hero[] = [
     name: 'Tracer',
     role: 'Damage',
     color: 'from-red-400 to-red-600',
-    imageUrl: '/icons/tracer.png',
+    imageUrl: './icons/tracer.png',
     enabled: false,
     voicelines: [
       {
         text: "Cheers love, the cavalry's here!",
-        audio: '/sounds/tracer1.mp3'
+        audio: './sounds/tracer1.mp3'
       }
     ]
   },
@@ -566,16 +566,16 @@ export const heroes: Hero[] = [
     name: 'Venture',
     role: 'Damage',
     color: 'from-red-400 to-red-600',
-    imageUrl: '/icons/venture.png',
+    imageUrl: './icons/venture.png',
     enabled: true,
     voicelines: [
       {
         text: "Excavation initiation!",
-        audio: '/sounds/venture1.mp3'
+        audio: './sounds/venture1.mp3'
       },
       {
         text: "Whopsi daisy",
-        audio: '/sounds/venture2.mp3'
+        audio: './sounds/venture2.mp3'
       }
     ]
   },
@@ -584,12 +584,12 @@ export const heroes: Hero[] = [
     name: 'Widowmaker',
     role: 'Damage',
     color: 'from-red-400 to-red-600',
-    imageUrl: '/icons/widowmaker.png',
+    imageUrl: './icons/widowmaker.png',
     enabled: true,
     voicelines: [
       {
         text: "I got you in my sights.",
-        audio: '/sounds/widowmaker1.mp3'
+        audio: './sounds/widowmaker1.mp3'
       }
     ]
   },
@@ -598,12 +598,12 @@ export const heroes: Hero[] = [
     name: 'Winston',
     role: 'Tank',
     color: 'from-gray-400 to-gray-600',
-    imageUrl: '/icons/winston.png',
+    imageUrl: './icons/winston.png',
     enabled: false,
     voicelines: [
       {
         text: "Did someone say... peanut butter?",
-        audio: '/sounds/winston1.mp3'
+        audio: './sounds/winston1.mp3'
       }
     ]
   },
@@ -612,12 +612,12 @@ export const heroes: Hero[] = [
     name: 'Wrecking Ball',
     role: 'Tank',
     color: 'from-gray-400 to-gray-600',
-    imageUrl: '/icons/wreckingball.png',
+    imageUrl: './icons/wreckingball.png',
     enabled: true,
     voicelines: [
       {
         text: "Like a wrecking ball",
-        audio: '/sounds/wreckingball1.mp3'
+        audio: './sounds/wreckingball1.mp3'
       }
     ]
   },
@@ -626,12 +626,12 @@ export const heroes: Hero[] = [
     name: 'Zarya',
     role: 'Tank',
     color: 'from-gray-400 to-gray-600',
-    imageUrl: '/icons/zarya.png',
+    imageUrl: './icons/zarya.png',
     enabled: true,
     voicelines: [
       {
         text: "Fire at will!",
-        audio: '/sounds/zarya1.mp3'
+        audio: './sounds/zarya1.mp3'
       }
     ]
   },
@@ -640,16 +640,16 @@ export const heroes: Hero[] = [
     name: 'Zenyatta',
     role: 'Support',
     color: 'from-yellow-400 to-yellow-600',
-    imageUrl: '/icons/zenyatta.png',
+    imageUrl: './icons/zenyatta.png',
     enabled: true,
     voicelines: [
       {
         text: "Into the Iris.",
-        audio: '/sounds/zenyatta1.mp3'
+        audio: './sounds/zenyatta1.mp3'
       },
       {
         text: "Experience tranquility.",
-        audio: '/sounds/zenyatta2.mp3'
+        audio: './sounds/zenyatta2.mp3'
       }
     ]
   }                                   
