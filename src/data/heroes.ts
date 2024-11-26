@@ -65,10 +65,10 @@ export const heroes: Hero[] = [
     role: 'Damage',
     color: 'from-red-400 to-red-600',
     imageUrl: './icons/bastion.png',
-    enabled: false,
+    enabled: true,
     voicelines: [
       {
-        text: "*Happy beeping*",
+        text: "*Victory beeping*",
         audio: './sounds/bastion1.mp3'
       }
     ]
@@ -317,7 +317,7 @@ export const heroes: Hero[] = [
     role: 'Damage',
     color: 'from-red-400 to-red-600',
     imageUrl: './icons/mccree.png',
-    enabled: false,
+    enabled: true,
     voicelines: [
       {
         text: "It's high noon!",
