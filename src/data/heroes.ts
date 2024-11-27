@@ -500,7 +500,7 @@ export const heroes: Hero[] = [
     enabled: true,
     voicelines: [
       {
-        text: "I÷m man on a mission!",
+        text: "I'm man on a mission!",
         audio: './sounds/soldier1.mp3'
       }
     ]
@@ -516,6 +516,10 @@ export const heroes: Hero[] = [
       {
         text: "Skibidi sombra",
         audio: './sounds/sombra1.mp3'
+      },
+      {
+        text: "Apagano las luces",
+        audio: './sounds/sombra2.mp3'
       }
     ]
   },

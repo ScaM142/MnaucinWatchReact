@@ -51,10 +51,10 @@ function App() {
     console.log('click');
     // Center position calculation
     const position = {
-      x: rect.left + (rect.width / 2), // Center horizontally
-      y: rect.bottom + window.scrollY
+      x: rect.left + (rect.width / 2) + window.scrollX, // Center horizontally
+      y: rect.top+ window.scrollY// Position below the button
     };
-
+    
     console.log('Modal position:', position); // Debug log
 
     if (enabled) {
@@ -105,7 +105,7 @@ function App() {
             <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           </div>
 
-          <div className="relative z-10 py-12 px-4">
+          <div className="relative z-10  px-4">
             <div className="max-w-[90rem] mx-auto"> {/* Increased max width */}
               <div className="text-center mb-12">
                 <div className="flex items-center justify-center gap-3 mb-4">
@@ -200,13 +200,13 @@ function App() {
               </div>
               {selectedHero && modalPosition && (
                 <div
-                  className="voicelines-modal fixed bg-gray-800 p-4 rounded-lg shadow-lg"
+                  className="voicelines-modal absolute bg-gray-800 p-4 rounded-lg shadow-lg"
                   style={{
-                    top: modalPosition?.y ?? 0,
-                    left: modalPosition?.x ?? 0,
+                    top: modalPosition.y + 8, // Position below the button with offset
+                    left: modalPosition.x,
                     zIndex: 50,
                     minWidth: '200px',
-                    transform: 'translate(-50%, 8px)', // Center horizontally with offset
+                    transform: 'translate(-50%, 0)', // Center horizontally with offset
                     border: '1px solid rgba(255,255,255,0.1)'
                   }}
                 >
