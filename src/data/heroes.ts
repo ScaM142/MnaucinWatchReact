@@ -518,7 +518,7 @@ export const heroes: Hero[] = [
         audio: './sounds/sombra1.mp3'
       },
       {
-        text: "Apagano las luces",
+        text: "Apagando las luces",
         audio: './sounds/sombra2.mp3'
       }
     ]
@@ -557,10 +557,10 @@ export const heroes: Hero[] = [
     role: 'Damage',
     color: 'from-red-400 to-red-600',
     imageUrl: './icons/tracer.png',
-    enabled: false,
+    enabled: true,
     voicelines: [
       {
-        text: "Cheers love, the cavalry's here!",
+        text: "I'm already tracer",
         audio: './sounds/tracer1.mp3'
       }
     ]
