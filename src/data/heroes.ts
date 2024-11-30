@@ -231,10 +231,10 @@ export const heroes: Hero[] = [
     role: 'Support',
     color: 'from-yellow-400 to-yellow-600',
     imageUrl: './icons/juno.png',
-    enabled: false,
+    enabled: true,
     voicelines: [
       {
-        text: "Stay close!",
+        text: "Welcome to orbit!",
         audio: './sounds/juno1.mp3'
       }
     ]
